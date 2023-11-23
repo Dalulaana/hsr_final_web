@@ -1,0 +1,144 @@
+body {
+    
+    background-image: url(https://cdn-wp.thesportsrush.com/2023/06/984fcd00-herta.jpg);
+    background-size: 1530px; 
+    background-attachment: fixed;
+    
+}
+
+header {
+    width: 80%;
+    margin-top: 60px;
+    margin-left: 10%;
+}
+
+h1 {
+    color: white;
+    font-weight: 4rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+span {
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+#w {
+    opacity: 1;
+}
+
+.containerq {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    width: 80%;
+    height: 900px;
+    background-image: linear-gradient(#adb5bd, #8cb2d1);
+    margin-left: 10%;
+
+}
+
+.content {
+    padding: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.box {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.accordion {
+    
+    width: 600px;
+    display: inline;
+    justify-content: center;
+}
+
+
+.time {
+    display: flex;
+    justify-content: center;
+}
+
+.time div {
+    flex-basis: 100px;
+}
+
+.time div p {
+    font-size: 50px;
+}
+
+
+/* button to open chat */
+.open-button {
+    background-color: white;
+    color: #000;
+    padding:16px 20px;
+    border-radius: 8px;
+    border:none;
+    cursor:pointer;
+    opacity:0.9;
+    position: fixed;
+    bottom:23px;
+    right:28px;
+    width:140px;
+    transition:0.3s;
+}
+  
+  /* chat is hidden */
+.chat-popup {
+    display:none;
+    position: fixed;
+    bottom:0;
+    right:15px;
+    z-index:9;
+}
+  
+.form-container {
+    max-width:280px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.form-container textarea {
+    width:100%;
+    padding:15px;
+    margin:5px 0 22px 0;
+    border:none;
+    background: #f1f1f1;
+    border-radius: 8px;
+    resize:none;
+    min-height:140px;
+}
+
+/* checkbox changes color when click */
+.form-container textarea:focus {
+    background-color:#ddd;
+    outline:none;
+}
+  
+.form-container .btn {
+    background-color: #25ca8e;
+    color:white;
+    padding:16px 20px;
+    border-radius: 8px;
+    border:none;
+    cursor:pointer;
+    width:100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.form-container .cancel {
+    background-color: rgb(243, 71, 71);
+}
+
+
+.form-container .btn:hover, .open-button:hover {
+    opacity:0.9;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Honkai: Star Rail Characters</title>
+        <link rel="stylesheet" href="stylechar.css">
+        <link rel="icon" href="icon3.png">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html"><img src="logo.webp" class="logoim" style="width: 200px;"></a>
+                <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" 
+                id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Главная<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Другие персонажи</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="characters.html">Тир лист персонажей</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Дань Хэн</a>
+                        <a class="dropdown-item" href="#">Блэйд</a>
+                        <a class="dropdown-item" href="#">Лоча</a>
+                        <a class="dropdown-item" href="#">Цзин Юань</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="update.html">Обновление 1.5</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <a class="nav-link btn-outline-dark" href="sign_log_in.html">Регистрация/Вход</a> 
+            </nav>
+        </header>
+    
+        <div class="containerq">
+            <div class="content">
+                
+                <div class="task1">
+                    <h1>Create Your Own Tier List</h1>
+                    <input type="text" class="form-control" id="taskInput" placeholder="Введите имя персонажа">
+                    <button id="addTaskButton" type="button" class="btn btn-light">Добавить</button>
+                </div>
+                <div class="task12">
+                    <ol id="taskList"></ol>
+                </div>
+
+                <div class="game">
+                    <h2>Guess Characters Rating</h2>
+                    <div class="colunm" id="col1">
+                        <div class="rank1">5✦</div>
+                    </div>
+                    <div class="colunm" id="col2">
+                        <div class="rank2">4✦</div>
+                    </div>
+                </div>
+                <div class="game2">
+                    <div class="card" id="51" draggable="true"><img src="bladepng.png" style="width: 48px;"></div>
+                    <div class="card" id="41" draggable="true"><img src="zzzzz-1700342148hook.png" style="width: 38px;"></div>
+                    <div class="card" id="42" draggable="true"><img src="zzzzz-1700342148luka.png" style="width: 38px;"></div>
+                    <div class="card" id="52" draggable="true"><img src="kafkapng.png" style="width: 48px;"></div>
+                    <div class="card" id="53" draggable="true"><img src="zzzzz-1674766684jingliupng.png" style="width: 48px;"></div>
+                    <div class="card" id="54" draggable="true"><img src="luochapng.png" style="width: 48px;"></div>
+                    <div class="card" id="55" draggable="true"><img src="jing-yuanpng.png" style="width: 48px;"></div>
+                    <div class="card" id="43" draggable="true"><img src="zzzzz-1700342148sushang.png" style="width: 38px;"></div>
+                    <div class="card" id="56" draggable="true"><img src="zzzzz-1688908393imbibitor-lunae.png" style="width: 48px;"></div>
+                    <div class="card" id="44" draggable="true"><img src="zzzzz-1700342148lynx.png" style="width: 38px;"></div>
+                </div>
+
+                <div class="app">
+                    <h1>Quiz</h1>
+                    <div class="quiz">
+                        <h2 id="question">question here</h2>
+                        <div id="answer-buttons">
+                            <button class="btn">answer 1</button>
+                            <button class="btn">answer 2</button>
+                            <button class="btn">answer 3</button>
+                        </div>
+                        <audio id="myAudio">
+                            <source src="click-button-131479.mp3" type="audio/mpeg">
+                          </audio>
+                        <button id="next-btn" onclick="playAudio()">Next</button>
+                    </div>
+                </div>
+            </div>
+            <script src="char.js"></script>
+                
+        </div>
+
+        <footer class="bg-light py-3">
+            <div class="container1 text-center">
+                <p> By Daiana Kuljanova</p>
+              
+                <p><img src="location.png" style="width: 13px;"> Astana, Kazakhstan</p>
+                <p><img src="sms-notification.jpg" style="width: 13px;"> daianakv12@gmail.com</p>
+                 Investigate more ⬇️</a>
+                 <br></br>
+                <a target="_blank" rel="noopener norefenner" href="https://hsr.hoyoverse.com/ru-ru/home">
+                    <img src="https://sun6-23.userapi.com/s/v1/ig2/YeLimYpWrLy5sFAHKjJ6rilwEtbvH7z5_aXxkjxrXiTl3xku7YJ-0G4nFDP8VXkwGs1gRN54sGz-qMWZRHqtrQex.jpg?size=1288x1288&quality=95&crop=0,0,1288,1288&ava=1" style="width: 40px;">
+                </a> 
+        </footer>
+
+    </body>
+</html>
